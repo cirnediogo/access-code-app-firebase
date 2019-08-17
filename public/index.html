@@ -36,6 +36,19 @@
       <h1>Firebase Hosting Setup Complete</h1>
       <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
       <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+      <form action="https://us-central1-access-code-app.cloudfunctions.net/enviarEmail" method="post">   
+        <label>Assunto:</label>
+        <input type="text" name="assunto">
+       
+        <label>Destinatários:</label>
+        <input type="text" name="destinatarios">
+       
+        <label>Mensagem:</label>
+        <input type="text" name="corpo">
+       
+        <button type="submit">Enviar</button>
+      </form>
     </div>
     <p id="load">Firebase SDK Loading&hellip;</p>
 
